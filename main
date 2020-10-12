@@ -1,0 +1,78 @@
+import time
+print('Welcome, to Doomsday Clock Simulator!')
+name = str(input('What is your name? '))
+print(name, '... do not let the clock reach midnight (or do)! You have 5 rounds until your reign ends, go crazy! (Or sensible) ')
+print('\n')
+print('Answer the questions with y or n, anything else will be treated as a n...')
+print('\n')
+print("Let's Begin...")
+print('\n')
+print('The Doomsday Clock is at 11.30')
+time.sleep(1.5)
+clock_position = 30
+rounds_count = 5
+ans1 = input(
+    'Your country has the capacity to create 20 nuclear bombs, do you create them? '
+)
+if ans1 == 'y':
+  clock_position = clock_position + 6
+  print('The Doomsday Clock moves to','11:',clock_position,'...' ,rounds_count - 1, 'rounds until end!')
+else:
+   print('The Doomsday Clock stays at','11:', clock_position, '...', rounds_count - 1, ' rounds until end!')
+print('\n') 
+if clock_position == 60:
+  print('Game over, you ended the world.')
+else:
+ ans2 = input(
+     'Another world leader has a birthday party, call it stupid on Twitter? '
+ )
+rounds_count = 4 
+if ans2 == 'y':
+  clock_position = clock_position + 6
+  print('The Doomsday Clock moves to','11:',clock_position,'...' ,rounds_count - 1, 'rounds until end!')
+else:
+   print('The Doomsday Clock stays at','11:', clock_position, '...', rounds_count - 1, ' rounds until end!')
+print('\n') 
+if clock_position == 60:
+  print('Game over, you ended the world.')
+else:
+ ans3 = input(
+     'Enforce a breathing tax with extreme military force? '
+ )
+ rounds_count = 3
+if ans3 == 'y':
+  clock_position = clock_position + 6
+  print('The Doomsday Clock moves to','11:',clock_position,'...' ,rounds_count - 1, 'rounds until end!')
+else:
+   print('The Doomsday Clock stays at','11:', clock_position, '...', rounds_count - 1, ' rounds until end!')
+print('\n') 
+if clock_position == 60:
+  print('Game over, you ended the world.')
+else:
+ ans4 = input(
+     'Dump a megaton of nuclear waste into the ocean just to annoy environmentalists? '
+ )
+ rounds_count = 2
+if ans4 == 'y':
+  clock_position = clock_position + 6
+  print('The Doomsday Clock moves to','11:',clock_position,'...' ,rounds_count - 1, 'rounds until end!')
+else:
+   print('The Doomsday Clock stays at','11:', clock_position, '...', rounds_count - 1, ' rounds until end!')
+print('\n') 
+if clock_position == 60:
+  print('Game over, you ended the world.')
+else:
+ ans5 = input(
+     'Start a nuclear war over how to pronouce scone? '
+ )
+ rounds_count = 1
+if ans5 == 'y':
+  clock_position = clock_position + 6
+  print('The Doomsday Clock moves to','12:00','...' ,rounds_count - 1, 'rounds until end!')
+else:
+   print('The Doomsday Clock stays at','11:', clock_position, '...', rounds_count - 1, ' rounds until end!')
+print('\n') 
+if clock_position == 60:
+  print('Game over, you ended the world.')
+else: 
+  print("Congratualtions, you didn't kill everyone!")
